@@ -1,0 +1,29 @@
+name: nfc_demo
+description: >-
+  App de ejemplo para el video tutorial de Programación Móvil (SS603):
+  lectura y escritura de tags NFC con Flutter en Android, iOS y Web.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Plugin principal: maneja la sesión NFC en Android e iOS.
+  # Usamos la v4 (la v3 tiene otra API y NO es compatible).
+  nfc_manager: ^4.1.0
+
+  # Abstracción multiplataforma de NDEF (leer/escribir mensajes)
+  # construida sobre nfc_manager v4.
+  nfc_manager_ndef: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

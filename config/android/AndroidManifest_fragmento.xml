@@ -1,0 +1,24 @@
+<!--
+  Pegar en: android/app/src/main/AndroidManifest.xml
+  (DENTRO de <manifest>, ANTES de <application>)
+-->
+
+<!-- Permiso NFC. Es un permiso "normal": Android lo concede al instalar,
+     NO muestra diálogo al usuario. -->
+<uses-permission android:name="android.permission.NFC" />
+
+<!-- required="false": la app también se instala en celulares SIN NFC.
+     Con "true", Play Store la ocultaría en esos equipos. -->
+<uses-feature android:name="android.hardware.nfc" android:required="false" />
+
+
+<!--
+  OPCIONAL: abrir la app automáticamente al acercar un tag con texto.
+  Pegar DENTRO de la <activity android:name=".MainActivity"> existente:
+
+  <intent-filter>
+      <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+      <category android:name="android.intent.category.DEFAULT" />
+      <data android:mimeType="text/plain" />
+  </intent-filter>
+-->

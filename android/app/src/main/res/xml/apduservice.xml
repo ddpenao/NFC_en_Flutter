@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Registra el AID de la aplicación NDEF (NFC Forum Type 4 Tag).
+  Cuando otro celular lector seleccione este AID, Android le enviará
+  los comandos a NdefHceService.
+-->
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/hce_descripcion"
+    android:requireDeviceUnlock="false">
+    <aid-group android:description="@string/hce_descripcion" android:category="other">
+        <aid-filter android:name="D2760000850101" />
+    </aid-group>
+</host-apdu-service>

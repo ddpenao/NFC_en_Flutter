@@ -1,0 +1,7 @@
+<!--
+  Pegar en: ios/Runner/Info.plist  (dentro del <dict> principal)
+  Es el texto que iOS le muestra al usuario explicando para qué se usa el NFC.
+  Si falta, la app se CIERRA al iniciar la sesión NFC.
+-->
+<key>NFCReaderUsageDescription</key>
+<string>Usamos NFC para leer y escribir información en tags y stickers.</string>
