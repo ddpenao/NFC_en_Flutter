@@ -7,7 +7,7 @@ Lee y escribe tags NFC (texto y URL) en **Android** e **iOS** con `nfc_manager`,
 | | |
 |---|---|
 | 🎥 Video | _pegar enlace de YouTube (No listado)_ |
-| 👥 Integrantes | _Nombre 1_ · _Nombre 2_ — Grupo _0X_ |
+| 👥 Integrantes | _Daniel Peña _ · _Camilo Rios_ — Grupo _03_ |
 
 ---
 
